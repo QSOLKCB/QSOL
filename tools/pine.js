@@ -25,8 +25,7 @@ const imap = new Imap({
   password: PASS,
   host: 'imap.gmail.com',
   port: 993,
-  tls: true,
-  tlsOptions: { rejectUnauthorized: false }
+  tls: true
 });
 
 const transporter = nodemailer.createTransport({
@@ -149,14 +148,15 @@ function replyToMessage() {
         subject: replySubject,
         text: body
       }, (err) => {
-        fs.unlinkSync(tmpFile);
         if (err) {
           console.error('Send failed:', err.message);
+          console.log(`Draft saved at: ${tmpFile}`);
           setTimeout(() => {
             if (currentView === 'message') displayMessage();
             else displayList();
           }, 2000);
         } else {
+          try { fs.unlinkSync(tmpFile); } catch {}
           console.log('Reply sent!');
           setTimeout(() => {
             if (currentView === 'message') displayMessage();
@@ -165,7 +165,7 @@ function replyToMessage() {
         }
       });
     } else {
-      fs.unlinkSync(tmpFile);
+      try { fs.unlinkSync(tmpFile); } catch {}
       if (currentView === 'message') displayMessage();
       else displayList();
     }
