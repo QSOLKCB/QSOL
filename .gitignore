@@ -1,0 +1,42 @@
+# QSOL .gitignore
+# Keep it minimal - just the essentials
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.exe
+*.out
+build/
+dist/
+bin/
+
+# Compiled code
+*.pyc
+__pycache__/
+*.class
+*.jar
+node_modules/
+target/
+
+# Module binaries (keep source, exclude compiled)
+modules/**/linecount
+modules/**/a.out
+
+# Editor and IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.log
+
+# Dependencies (modules should have minimal deps)
+vendor/
+packages/
