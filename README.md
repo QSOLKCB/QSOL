@@ -12,6 +12,8 @@ We believe that software has become unnecessarily bloated. QSOL is a return to t
 - **Local-First** - Privacy and independence through local execution
 - **Clarity over Complexity** - Simple solutions that anyone can understand and modify
 
+📖 **Read the full doctrine in [MEMESTACKS_PHILOSOPHY.md](MEMESTACKS_PHILOSOPHY.md)**
+
 ## Core Principles
 
 ### 1. **Size Constraints**
