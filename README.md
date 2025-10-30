@@ -63,16 +63,16 @@ python3 serve.py
 QSOL provides ready-to-use templates that embody minimalist principles:
 
 ### 🧮 [Line Counter](modules/example/) 
-Basic file processing utility demonstrating zero-dependency design. **~50 lines** in Python, **<1s** build time.
+Basic file processing utility demonstrating zero-dependency design. **60-72 lines** (Python/C), **<1s** build time.
 
 ### 🌐 [Web Server](modules/webserver/)
-Minimal static file server with zero dependencies. **~120 lines**, starts in **<50ms**, perfect for development.
+Minimal static file server with zero dependencies. **122 lines**, starts in **<50ms**, perfect for development.
 
 ### 🔄 [File Converter](modules/fileconvert/)
-JSON ⟷ CSV converter using only standard library. **~150 lines**, **>10K rows/sec** throughput.
+JSON ⟷ CSV converter using only standard library. **202 lines**, **>10K rows/sec** throughput.
 
 ### ⚡ [Task Runner](modules/taskrunner/)
-Simple task automation without npm or make. **~100 lines**, **instant** startup, pure Python power.
+Simple task automation without npm or make. **150 lines** (run.py), **instant** startup, pure Python power.
 
 Each template is:
 - ✅ **Self-contained** - Copy and use immediately

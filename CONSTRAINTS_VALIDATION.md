@@ -145,8 +145,10 @@ find modules -name '*.py' -o -name '*.c' | xargs wc -l
 find modules -name '*.py' -o -name '*.c' | xargs ls -lh
 # Result: All under 100KB ✅
 
-# Dependency check
-grep -r "^import " modules/*/[^_]*.py | grep -v "^import sys\|^import os\|^import " | wc -l
+# Dependency check - verify only stdlib imports used
+grep -r "^import " modules/*/[^_]*.py | \
+  grep -v "sys\|os\|subprocess\|argparse\|json\|csv\|http\|socketserver\|importlib\|pathlib" | \
+  wc -l
 # Result: Only stdlib imports ✅
 ```
 
