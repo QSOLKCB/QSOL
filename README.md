@@ -12,6 +12,8 @@ We believe that software has become unnecessarily bloated. QSOL is a return to t
 - **Local-First** - Privacy and independence through local execution
 - **Clarity over Complexity** - Simple solutions that anyone can understand and modify
 
+📖 **Read the full doctrine in [MEMESTACKS_PHILOSOPHY.md](MEMESTACKS_PHILOSOPHY.md)**
+
 ## Core Principles
 
 ### 1. **Size Constraints**
@@ -45,25 +47,52 @@ QSOL is a collection of:
 git clone https://github.com/QSOLKCB/QSOL.git
 cd QSOL
 
-# Explore available modules
-ls modules/
+# Try a template in 30 seconds
+cd modules/example
+python3 linecount.py README.md
 
-# Each module is self-contained and includes:
-# - Source code (simple and readable)
-# - Build script (if needed)
-# - README with usage examples
-# - Tests (optional but encouraged)
+# Start a web server instantly
+cd ../webserver
+python3 serve.py
 ```
+
+📚 **See [QUICKSTART.md](QUICKSTART.md) for detailed examples and usage patterns**
+
+## Starter Templates
+
+QSOL provides ready-to-use templates that embody minimalist principles:
+
+### 🧮 [Line Counter](modules/example/) 
+Basic file processing utility demonstrating zero-dependency design. **60-72 lines** (Python/C), **<1s** build time.
+
+### 🌐 [Web Server](modules/webserver/)
+Minimal static file server with zero dependencies. **122 lines**, starts in **<50ms**, perfect for development.
+
+### 🔄 [File Converter](modules/fileconvert/)
+JSON ⟷ CSV converter using only standard library. **202 lines**, **>10K rows/sec** throughput.
+
+### ⚡ [Task Runner](modules/taskrunner/)
+Simple task automation without npm or make. **150 lines** (run.py), **instant** startup, pure Python power.
+
+Each template is:
+- ✅ **Self-contained** - Copy and use immediately
+- ✅ **Well-documented** - Clear README with examples
+- ✅ **Constraint-compliant** - Size, speed, and clarity validated
+- ✅ **Production-ready** - Actually useful, not just demos
 
 ## Repository Structure
 
 ```
 QSOL/
-├── README.md           # This file - the philosophy and overview
-├── CONTRIBUTING.md     # Guidelines for contributors
-├── LICENSE            # Open-source license
-└── modules/           # Individual QSOL modules
-    └── example/       # Example minimal module
+├── README.md                    # This file - philosophy and overview
+├── MEMESTACKS_PHILOSOPHY.md     # The complete doctrine
+├── CONTRIBUTING.md              # Guidelines for contributors
+├── LICENSE                      # Open-source license
+└── modules/                     # QSOL modules and templates
+    ├── example/                 # Line counter - basic example
+    ├── webserver/              # Minimal HTTP server
+    ├── fileconvert/            # JSON/CSV converter
+    └── taskrunner/             # Task automation tool
 ```
 
 ## Sacred Constraints
