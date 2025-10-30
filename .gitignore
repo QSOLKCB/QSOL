@@ -40,3 +40,6 @@ temp/
 # Dependencies (modules should have minimal deps)
 vendor/
 packages/
+
+# Environment files (secrets)
+.env

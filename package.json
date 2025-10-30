@@ -1,0 +1,20 @@
+{
+  "name": "qsol",
+  "version": "0.0.2",
+  "description": "Quick & Simple Open-source Library - Small Is Beautiful. Fast is Holy.",
+  "private": true,
+  "scripts": {
+    "deploy": "node tools/deploy.js"
+  },
+  "keywords": [
+    "minimal",
+    "fast",
+    "simple",
+    "local-first"
+  ],
+  "author": "QSOL Contributors",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "basic-ftp": "^5.0.5"
+  }
+}
