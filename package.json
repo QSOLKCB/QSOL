@@ -1,0 +1,11 @@
+{
+  "name": "qsol",
+  "version": "0.0.2",
+  "description": "Quick & Simple Open-source Library - Small Is Beautiful. Fast is Holy.",
+  "scripts": {
+    "telnet": "node tools/telnet.js"
+  },
+  "keywords": ["minimal", "simple", "fast", "local-first"],
+  "author": "QSOL Contributors",
+  "license": "SEE LICENSE IN LICENSE"
+}
