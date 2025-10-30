@@ -3,9 +3,7 @@
 # Demonstrates: Build completes in <1 second
 
 echo "Building linecount (C version)..."
-time gcc -O2 -Wall -Wextra -o linecount linecount.c
-
-if [ $? -eq 0 ]; then
+if time gcc -O2 -Wall -Wextra -o linecount linecount.c; then
     echo "✓ Build successful!"
     echo "Usage: ./linecount file.txt"
 else

@@ -10,19 +10,19 @@
 long count_lines(FILE *fp) {
     long count = 0;
     int ch;
-    int last_was_newline = 1;
+    int prev_char_was_newline = 1;
     
     while ((ch = fgetc(fp)) != EOF) {
         if (ch == '\n') {
             count++;
-            last_was_newline = 1;
+            prev_char_was_newline = 1;
         } else {
-            last_was_newline = 0;
+            prev_char_was_newline = 0;
         }
     }
     
     /* Count last line if file doesn't end with newline */
-    if (!last_was_newline) {
+    if (!prev_char_was_newline) {
         count++;
     }
     
