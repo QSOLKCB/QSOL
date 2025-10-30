@@ -1,6 +1,8 @@
-# QSOL v1.0
+# QSOL v0.0.2
 
 > **"Small Is Beautiful. Fast is Holy."**
+> 
+> **"Zero Bloat Equilibrium Maintained."**
 
 ## Philosophy
 
@@ -12,7 +14,7 @@ We believe that software has become unnecessarily bloated. QSOL is a return to t
 - **Local-First** - Privacy and independence through local execution
 - **Clarity over Complexity** - Simple solutions that anyone can understand and modify
 
-📖 **Read the full doctrine in [MEMESTACKS_PHILOSOPHY.md](MEMESTACKS_PHILOSOPHY.md)**
+📖 **See [guidelines/Guidelines.md](guidelines/Guidelines.md) for development guidelines**
 
 ## Core Principles
 
@@ -56,7 +58,7 @@ cd ../webserver
 python3 serve.py
 ```
 
-📚 **See [QUICKSTART.md](QUICKSTART.md) for detailed examples and usage patterns**
+
 
 ## Starter Templates
 
@@ -85,9 +87,10 @@ Each template is:
 ```
 QSOL/
 ├── README.md                    # This file - philosophy and overview
-├── MEMESTACKS_PHILOSOPHY.md     # The complete doctrine
-├── CONTRIBUTING.md              # Guidelines for contributors
+├── Attributions.md              # Credits and inspirations
 ├── LICENSE                      # Open-source license
+├── guidelines/
+│   └── Guidelines.md            # Development guidelines
 └── modules/                     # QSOL modules and templates
     ├── example/                 # Line counter - basic example
     ├── webserver/              # Minimal HTTP server
@@ -107,7 +110,7 @@ Every QSOL module must adhere to:
 
 ## Contributing
 
-We welcome contributions that align with the QSOL philosophy. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting.
+We welcome contributions that align with the QSOL philosophy. See [guidelines/Guidelines.md](guidelines/Guidelines.md) for development guidelines.
 
 Remember: **The best code is no code. The second best is simple code.**
 
@@ -115,14 +118,8 @@ Remember: **The best code is no code. The second best is simple code.**
 
 QSOL is open-source software. See [LICENSE](LICENSE) for details.
 
-## Inspiration
-
-QSOL draws inspiration from:
-- [tinyapps.org](https://tinyapps.org) - Celebrating small, focused software
-- [The Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) - Do one thing and do it well
-- [The Suckless movement](https://suckless.org) - Simplicity and clarity
-- [Plan 9](https://9p.io/plan9/) - Clean, minimal design
-
 ---
+
+**See [Attributions.md](Attributions.md) for inspirations and credits.**
 
 *"Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."* - Antoine de Saint-Exupéry

@@ -117,6 +117,10 @@ def run_task(task_name, tasks_module=None):
 
 def main():
     """Main entry point."""
+    # Print QSOL banner
+    print("QSOL v0.0.2 — Zero Bloat Equilibrium Maintained.")
+    print()
+    
     # Load tasks
     tasks_module = load_tasks()
     
