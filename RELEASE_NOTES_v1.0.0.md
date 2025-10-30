@@ -12,7 +12,7 @@
 
 QSOL is the anti-bloat micro-framework — a return to code that breathes.
 
-It borrows from [tinyapps.org](https://tinyapps.org), the hacker ethos of the '90s, and your own MEMESTACKS philosophy line 4.
+It borrows from [tinyapps.org](https://tinyapps.org), the hacker ethos of the '90s, and the MEMESTACKS philosophy.
 
 No frameworks wrapped around frameworks. No 500 MB build trees. No lies about "simplicity."
 
