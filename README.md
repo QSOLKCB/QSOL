@@ -119,9 +119,9 @@ QSOL is open-source software. See [LICENSE](LICENSE) for details.
 
 QSOL draws inspiration from:
 - [tinyapps.org](https://tinyapps.org) - Celebrating small, focused software
-- The Unix Philosophy - Do one thing and do it well
-- The Suckless movement - Simplicity and clarity
-- Plan 9 - Clean, minimal design
+- [The Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) - Do one thing and do it well
+- [The Suckless movement](https://suckless.org) - Simplicity and clarity
+- [Plan 9](https://9p.io/plan9/) - Clean, minimal design
 
 ---
 
