@@ -27,6 +27,9 @@ def count_stdin():
 
 def main():
     """Main entry point."""
+    # Print QSOL banner to stderr to avoid interfering with output
+    print("QSOL v0.0.2 — Zero Bloat Equilibrium Maintained.", file=sys.stderr)
+    
     if len(sys.argv) < 2:
         # Read from stdin
         count = count_stdin()

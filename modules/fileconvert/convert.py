@@ -83,6 +83,9 @@ def main():
     """Parse arguments and convert."""
     import argparse
     
+    # Print QSOL banner
+    print("QSOL v0.0.2 — Zero Bloat Equilibrium Maintained.", file=sys.stderr)
+    
     parser = argparse.ArgumentParser(
         description='QSOL File Converter - JSON ⟷ CSV with zero dependencies',
         formatter_class=argparse.RawDescriptionHelpFormatter,
