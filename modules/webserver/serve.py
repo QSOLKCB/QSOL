@@ -62,6 +62,10 @@ def main():
     """Parse arguments and start server."""
     import argparse
     
+    # Print QSOL banner
+    print("QSOL v0.0.2 — Zero Bloat Equilibrium Maintained.")
+    print()
+    
     parser = argparse.ArgumentParser(
         description='QSOL Minimal Web Server - Zero dependencies, instant start',
         formatter_class=argparse.RawDescriptionHelpFormatter,
